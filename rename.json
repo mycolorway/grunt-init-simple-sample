@@ -1,0 +1,5 @@
+{
+    "src/sample.coffee": "src/{%= source_name %}.coffee",
+    "styles/sample.scss": "styles/{%= source_name %}.scss",
+    "spec/sample-spec.coffee": "spec/{%= source_name %}-spec.coffee"   
+}
