@@ -1,7 +1,7 @@
 'use strict';
 
 exports.description = "Create an simple module.";
-exports.notes = 'The _project name_ will prefix "simple-" automactically.';
+exports.notes = 'The _source_name_ would be the name of all files and classes.';
 exports.warnOn = "*";
 
 exports.template = function(grunt, init, done) {
@@ -9,6 +9,9 @@ exports.template = function(grunt, init, done) {
   init.process({}, [
     // Prompt for these values.
     init.prompt('name'),
+    init.prompt('source_name', function(value, data, done) {
+        done(null, data.name.split("-")[1])
+    }),
     init.prompt('description'),
     init.prompt('version'),
     init.prompt('repository'),
@@ -28,6 +31,8 @@ exports.template = function(grunt, init, done) {
         "grunt-umd": "2.x"
     };
 
+    props.class_name = props.source_name.charAt(0).toUpperCase() + props.source_name.slice(1)
+
     // Files to copy (and process).
     var files = init.filesToCopy(props);
 
@@ -40,3 +45,5 @@ exports.template = function(grunt, init, done) {
     // All done!
     done();
   });
+
+};

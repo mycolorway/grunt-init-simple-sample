@@ -1,4 +1,4 @@
-simple-{%= name %}
+{%= name %}
 =============
 
 {%= description %}

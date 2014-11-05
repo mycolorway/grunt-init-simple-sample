@@ -1,6 +1,6 @@
 
-describe 'Simple Sample', ->
+describe 'Simple {%= source_name %}', ->
 
   it 'should inherit from SimpleModule', ->
-    sample = simple.sample()
-    expect(sample instanceof SimpleModule).toBe(true)
+    {%= source_name %} = simple.{%= source_name %}()
+    expect({%= source_name %} instanceof SimpleModule).toBe(true)

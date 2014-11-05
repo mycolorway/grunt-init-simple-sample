@@ -1,8 +1,8 @@
 
-class Sample extends SimpleModule
+class {%= class_name %} extends SimpleModule
 
   _init: ->
 
 
-sample = (opts) ->
-  new Sample(opts)
+{%= source_name %} = (opts) ->
+  new {%= class_name %}(opts)

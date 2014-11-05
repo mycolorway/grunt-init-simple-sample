@@ -3,7 +3,7 @@ module.exports = (grunt) ->
   grunt.initConfig
 
     pkg: grunt.file.readJSON 'package.json'
-    name: "{%= name %}"
+    name: "{%= source_name %}"
 
     sass:
       styles:

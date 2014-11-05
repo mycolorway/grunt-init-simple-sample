@@ -1,15 +1,13 @@
 {
-  "name": "simple-{%= name %}",
+  "name": "{%= name %}",
   "version": "2.0.0",
   "homepage": "{%= homepage %}",
   "authors": [
     "{%= author_name %} <{%= author_email %}>"
   ],
   "description": "{%= description %}",
-  "main": "lib/{%= name %}.js",
-  "keywords": [
-    "sample"
-  ],
+  "main": "lib/{%= source_name %}.js",
+  "keywords": [],
   "license": "MIT",
   "ignore": [
     "**/.*",
