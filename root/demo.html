@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Simple {%= source_name %} Demo</title>
+    <title>Simple {%= class_name %} Demo</title>
     <meta charset="utf-8" />
+    <style type="text/css">
+        html, body {
+            background:#F9F9F9;
+            padding: 0;
+            margin: 0;
+            font: 14px/1.6 "Lucida Grande", "Helvetica", sans-serif;
+            color: #333;
+        }
+        .wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+            color: rgb(113, 113, 113);
+        }
+        header {
+            margin: 50px 0;
+            text-align: center;
+        }
+        section {
+            margin: 30px 0;
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="wrapper">
-</div>
+    <div class="wrapper">
+        <header>
+            <h1>Simple {%= class_name %}</h3>
+        </header>
+        <section>
+            Ooops... There is nothing here yet.
+        </section>
+    </div>
+    <script type="text/javascript" src="vendor/bower/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/bower/simple-module/lib/module.js"></script>
+    <script type="text/javascript" src="lib/{%= source_name %}.js"></script> 
+    <script type="text/javascript">
 
+    </script>
 </body>
 
 </html>

@@ -22,6 +22,9 @@ exports.template = function(grunt, init, done) {
     init.prompt('author_url'),
   ], function(err, props) {
     props.keywords = [];
+    props.scripts = {
+        "test": "grunt test --verbose"
+    };
     props.devDependencies = {
         "grunt": "0.x",
         "grunt-contrib-watch": "0.x",

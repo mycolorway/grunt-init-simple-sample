@@ -1,6 +1,6 @@
 {
   "name": "{%= name %}",
-  "version": "2.0.0",
+  "version": "{%= version %}",
   "homepage": "{%= homepage %}",
   "authors": [
     "{%= author_name %} <{%= author_email %}>"
