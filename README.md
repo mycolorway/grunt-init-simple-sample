@@ -1,6 +1,6 @@
 # grunt-init-simple-sample
 
-> 使用 grunt-init 创建一个 Tower.im 的前端组件。
+> 使用 grunt-init 创建一个彩程的前端组件。
 
 # 安装
 
