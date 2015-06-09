@@ -8,7 +8,6 @@ module.exports = (grunt) ->
     sass:
       styles:
         options:
-          bundleExec: true
           style: 'expanded'
           sourcemap: 'none'
         files:
